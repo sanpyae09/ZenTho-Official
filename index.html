@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenTho - Innovating Digital Experiences</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-gray-800">
+
+    <header id="navbar" class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm transition-all">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-blue-900">ZenTho</a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-gray-600 hover:text-blue-700 font-medium" data-lang-en="Home" data-lang-my="ပင်မစာမျက်နှာ">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-700 font-medium" data-lang-en="About" data-lang-my="ကျွန်ုပ်တို့အကြောင်း">About</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-700 font-medium" data-lang-en="Services" data-lang-my="ဝန်ဆောင်မှုများ">Services</a>
+                <a href="#updates" class="text-gray-600 hover:text-blue-700 font-medium" data-lang-en="Updates" data-lang-my="သတင်းလွှာ">Updates</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-blue-700 font-medium" data-lang-en="Portfolio" data-lang-my="လက်ရာများ">Portfolio</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors shadow" data-lang-en="Contact" data-lang-my="ဆက်သွယ်ရန်">Contact</a>
+                <div class="lang-switcher flex items-center space-x-1 border-l pl-4">
+                    <button id="lang-en" class="font-semibold text-sm">EN</button>
+                    <span class="text-gray-300">/</span>
+                    <button id="lang-my" class="font-semibold text-sm">MM</button>
+                </div>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-blue-700 font-medium" data-lang-en="Home" data-lang-my="ပင်မစာမျက်နှာ">Home</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-700 font-medium" data-lang-en="About" data-lang-my="ကျွန်ုပ်တို့အကြောင်း">About</a>
+            <a href="#services" class="block py-2 text-gray-600 hover:text-blue-700 font-medium" data-lang-en="Services" data-lang-my="ဝန်ဆောင်မှုများ">Services</a>
+            <a href="#updates" class="block py-2 text-gray-600 hover:text-blue-700 font-medium" data-lang-en="Updates" data-lang-my="သတင်းလွှာ">Updates</a>
+            <a href="#portfolio" class="block py-2 text-gray-600 hover:text-blue-700 font-medium" data-lang-en="Portfolio" data-lang-my="လက်ရာများ">Portfolio</a>
+            <a href="#contact" class="block mt-2 bg-blue-600 text-white text-center px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors shadow" data-lang-en="Contact" data-lang-my="ဆက်သွယ်ရန်">Contact</a>
+             <div class="lang-switcher flex items-center space-x-2 mt-4 justify-center">
+                    <button id="lang-en-mobile" class="font-semibold text-sm">EN</button>
+                    <span class="text-gray-400">/</span>
+                    <button id="lang-my-mobile" class="font-semibold text-sm">MM</button>
+                </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="bg-gradient-custom pt-16 pb-32 relative">
+            <div class="container mx-auto px-6 text-center">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-left">
+                        <h1 class="text-5xl md:text-6xl font-bold text-blue-900 mb-4 text-shadow" data-lang-en="Innovating Digital Experiences" data-lang-my="ဒစ်ဂျစ်တယ်အတွေ့အကြုံသစ်များကို ဖန်တီးပုံဖော်ခြင်း">Innovating Digital Experiences</h1>
+                        <p class="text-lg text-gray-700 mb-6" data-lang-en="ZenTho is a digital innovation company specializing in App & Game Development, Facebook Blue Mark Verification Services, and Custom Website & Application Solutions." data-lang-my="ZenTho သည် App နှင့် Game များရေးဆွဲခြင်း၊ Facebook Blue Mark အတည်ပြုခြင်းဝန်ဆောင်မှုနှင့် Custom Website/Application များ ပြုလုပ်ခြင်းတို့ကို အထူးပြုဆောင်ရွက်သော ဒစ်ဂျစ်တယ်တီထွင်ဖန်တီးရေး ကုမ္ပဏီတစ်ခုဖြစ်သည်။">ZenTho is a digital innovation company...</p>
+                        <a href="#services" class="inline-block bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg" data-lang-en="Explore Our Services" data-lang-my="ဝန်ဆောင်မှုများကို ကြည့်ရှုရန်">Explore Our Services</a>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/E0F7FA/334155?text=Digital+Innovation" alt="Digital Innovation Illustration" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+             <div class="section-divider section-divider-bottom">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path></svg>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-[#FDFBF8]">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-blue-900" data-lang-en="About ZenTho" data-lang-my="ZenTho အကြောင်း">About ZenTho</h2>
+                    <p class="text-lg text-gray-600 mt-2" data-lang-en="Crafting Digital Excellence" data-lang-my="ဒစ်ဂျစ်တယ် ကမ္ဘာ၏ ထူးချွန်ပြောင်မြောက်မှုများကို ပုံဖော်ခြင်း">Crafting Digital Excellence</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-4">
+                        <p class="text-gray-700 leading-relaxed" data-lang-en="At ZenTho, we create world-class applications and games under our own brand while also providing premium digital services for businesses and individuals worldwide." data-lang-my="ZenTho တွင် ကျွန်ုပ်တို့သည် မိမိတို့၏ ကိုယ်ပိုင်အမှတ်တံဆိပ်ဖြင့် ကမ္ဘာ့အဆင့်မီ Application များနှင့် Game များကို ဖန်တီးသည့်အပြင်၊ ကမ္ဘာတစ်ဝှမ်းရှိ စီးပွားရေးလုပ်ငန်းများနှင့် တစ်ဦးချင်းအတွက် ပရီမီယံ ဒစ်ဂျစ်တယ်ဝန်ဆောင်မှုများကိုလည်း ပေးဆောင်လျက်ရှိပါသည်။">At ZenTho, we create...</p>
+                        <p class="text-gray-700 leading-relaxed" data-lang-en="From custom websites to mobile applications, and Facebook Blue Mark verification services, we ensure your digital presence is strong, professional, and trusted." data-lang-my="Custom Website များမှသည် Mobile Application များ၊ Facebook Blue Mark အတည်ပြုခြင်းဝန်ဆောင်မှုများအထိ၊ သင်၏ ဒစ်ဂျစ်တယ်ကမ္ဘာပေါ်でのရှိနေမှုကို ခိုင်မာ၊ ကျွမ်းကျင်ပိုင်နိုင်ပြီး ယုံကြည်စိတ်ချရစေရန် ကျွန်ုပ်တို့က အာမခံပါသည်။">From custom websites...</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://placehold.co/400x300/E0F7FA/334155?text=Creativity" alt="Abstract digital creativity" class="rounded-lg shadow-lg transform hover:scale-105 transition-all"><img src="https://placehold.co/400x300/F1F8E9/334155?text=Team" alt="Our team" class="rounded-lg shadow-lg transform hover:scale-105 transition-all mt-4"><img src="https://placehold.co/400x300/B2EBF2/334155?text=Apps" alt="Our apps" class="rounded-lg shadow-lg transform hover:scale-105 transition-all"><img src="https://placehold.co/400x300/C5E1A5/334155?text=Success" alt="Success stories" class="rounded-lg shadow-lg transform hover:scale-105 transition-all mt-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-blue-50 relative pt-32 pb-20">
+             <div class="section-divider section-divider-top"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path></svg></div>
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-blue-900" data-lang-en="Our Services" data-lang-my="ကျွန်ုပ်တို့၏ ဝန်ဆောင်မှုများ">Our Services</h2>
+                    <p class="text-lg text-gray-600 mt-2" data-lang-en="What We Offer" data-lang-my="ကျွန်ုပ်တို့ ဘာတွေ ပေးသလဲ">What We Offer</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl card-shadow text-center transition-all hover:-translate-y-2 flex flex-col">
+                        <div class="inline-block bg-blue-100 p-4 rounded-full mb-4 mx-auto"><svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg></div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2" data-lang-en="App & Game Development" data-lang-my="App နှင့် Game ရေးဆွဲခြင်း">App & Game Development</h3>
+                        <p class="text-gray-600 flex-grow" data-lang-en="Custom Android/iOS apps and engaging, modern game design." data-lang-my="Android/iOS App များနှင့် ဆွဲဆောင်မှုရှိသော ခေတ်မီ Game ဒီဇိုင်းများ။">Custom Android/iOS apps...</p>
+                        <a href="#service-apps" class="mt-6 inline-block bg-blue-100 text-blue-800 font-semibold px-6 py-2 rounded-lg hover:bg-blue-200 transition-colors" data-lang-en="Learn More" data-lang-my="အသေးစိတ်ကြည့်ရန်">Learn More</a>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl card-shadow text-center transition-all hover:-translate-y-2 flex flex-col">
+                        <div class="inline-block bg-green-100 p-4 rounded-full mb-4 mx-auto"><svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2" data-lang-en="Website Development" data-lang-my="Website ရေးဆွဲခြင်း">Website Development</h3>
+                        <p class="text-gray-600 flex-grow" data-lang-en="Responsive, professional websites that are SEO-ready with modern UI/UX." data-lang-my="SEO အသင့်၊ ခေတ်မီ UI/UX နှင့် Responsive၊ ကျွမ်းကျင်ပိုင်နိုင်သော ဝဘ်ဆိုဒ်များ။">Responsive, professional websites...</p>
+                        <a href="#service-websites" class="mt-6 inline-block bg-green-100 text-green-800 font-semibold px-6 py-2 rounded-lg hover:bg-green-200 transition-colors" data-lang-en="Learn More" data-lang-my="အသေးစိတ်ကြည့်ရန်">Learn More</a>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl card-shadow text-center transition-all hover:-translate-y-2 flex flex-col">
+                        <div class="inline-block bg-indigo-100 p-4 rounded-full mb-4 mx-auto"><svg class="w-10 h-10 text-indigo-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.22 6.303-4.88 4.88-2.56-2.56a.75.75 0 0 0-1.06 1.06l3.09 3.09c.293.293.768.293 1.06 0l5.41-5.41a.75.75 0 0 0-1.06-1.06z"></path></svg></div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2" data-lang-en="Facebook Blue Mark" data-lang-my="Facebook Blue Mark">Facebook Blue Mark</h3>
+                        <p class="text-gray-600 flex-grow" data-lang-en="Fast and reliable processing for Profile and Page verification." data-lang-my="Profile နှင့် Page အတည်ပြုခြင်းအတွက် မြန်ဆန်ပြီး ယုံကြည်စိတ်ချရသော ဆောင်ရွက်မှု။">Fast and reliable processing...</p>
+                        <a href="#service-verification" class="mt-6 inline-block bg-indigo-100 text-indigo-800 font-semibold px-6 py-2 rounded-lg hover:bg-indigo-200 transition-colors" data-lang-en="Learn More" data-lang-my="အသေးစိတ်ကြည့်ရန်">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="service-apps" class="py-20 bg-[#FDFBF8]">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-blue-900" data-lang-en="App & Game Development" data-lang-my="App နှင့် Game ရေးဆွဲခြင်း">App & Game Development</h2>
+                    <p class="text-lg text-gray-600 mt-2" data-lang-en="From Idea to Interactive Reality" data-lang-my="စိတ်ကူးမှသည် လက်တွေ့ဆန်သော အတွေ့အကြုံများဆီသို့">From Idea to Interactive Reality</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                    <img src="https://placehold.co/600x450/E0F7FA/334155?text=App+UI/UX+Design" alt="App UI/UX Design" class="rounded-lg shadow-lg">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3" data-lang-en="Custom Application Development" data-lang-my="စိတ်ကြိုက် Application ရေးဆွဲခြင်း">Custom Application Development</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4" data-lang-en="We specialize in building bespoke mobile applications for both Android and iOS. We create apps that are not only functional but also intuitive and beautiful." data-lang-my="ကျွန်ုပ်တို့သည် Android နှင့် iOS နှစ်မျိုးလုံးအတွက် စိတ်ကြိုက်မိုဘိုင်း অ্যাপ্লিকেশনများကို တည်ဆောက်ရာတွင် အထူးပြုပါသည်။ လုပ်ဆောင်ချက်ပိုင်းသာမက၊ အလိုလိုသိလွယ်ပြီး လှပသော App များကို ဖန်တီးပေးပါသည်။">We specialize in building...</p>
+                        <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-3" data-lang-en="Benefits You Get" data-lang-my="ရရှိနိုင်မည့် အကျိုးကျေးဇူးများ">Benefits You Get</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Increased direct engagement with your customers." data-lang-my="သုံးစွဲသူ Customer များနှင့် တိုက်ရိုက်ထိတွေ့ဆက်ဆံမှု တိုးပွားစေခြင်း။">Increased direct engagement...</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Building strong loyalty for your brand." data-lang-my="သင့်ကုန်အမှတ်တံဆိပ် (Brand) အပေါ် သစ္စာစောင့်သိမှုကို တည်ဆောက်ပေးခြင်း။">Building strong loyalty...</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Gaining a competitive advantage over rivals." data-lang-my="ပြိုင်ဘက်များထက် သာလွန်သော အားသာချက်ကို ရရှိစေခြင်း။">Gaining a competitive advantage...</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Creating a new marketing channel to boost sales." data-lang-my="ရောင်းအားကို မြှင့်တင်ပေးနိုင်သော ဈေးကွက်လမ်းကြောင်းသစ် ဖန်တီးပေးခြင်း။">Creating a new marketing channel...</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2"><img src="https://placehold.co/600x450/F1F8E9/334155?text=Game+Concept" alt="Game Concept Art" class="rounded-lg shadow-lg"></div>
+                    <div class="md:order-1">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3" data-lang-en="Engaging Game Design" data-lang-my="ဆွဲဆောင်မှုရှိသော Game ဒီဇိုင်း">Engaging Game Design</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4" data-lang-en="Our passion for gaming drives us to create immersive and entertaining experiences. We handle all aspects of game development to produce games that captivate players." data-lang-my="Game များအပေါ် ကျွန်ုပ်တို့၏ စိတ်အားထက်သန်မှုက စွဲမက်ဖွယ်ကောင်းပြီး ဖျော်ဖြေမှုအပြည့်ပေးနိုင်သော အတွေ့အကြုံများကို ဖန်တီးရန် တွန်းအားပေးပါသည်။ ကစားသူများကို စွဲဆောင်နိုင်သော Game များထုတ်လုပ်ရန် Game ရေးဆွဲခြင်း၏ ကဏ္ဍအားလုံးကို ကျွန်ုပ်တို့ ကိုင်တွယ်ဆောင်ရွက်ပါသည်။">Our passion for gaming...</p>
+                        <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition-all shadow-lg" data-lang-en="Start Your App Project" data-lang-my="သင်၏ App Project ကို စတင်ရန်">Start Your App Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="service-websites" class="py-20 bg-blue-50 relative pt-32 pb-20">
+             <div class="section-divider section-divider-top"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path></svg></div>
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-green-800" data-lang-en="Custom Website Development" data-lang-my="စိတ်ကြိုက် Website ရေးဆွဲခြင်း">Custom Website Development</h2>
+                    <p class="text-lg text-gray-600 mt-2" data-lang-en="Building Your Digital Storefront" data-lang-my="သင်၏ ဒစ်ဂျစ်တယ် ဆိုင်ခန်းကို တည်ဆောက်ခြင်း">Building Your Digital Storefront</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                    <img src="https://placehold.co/600x450/E8F5E9/334155?text=Responsive+Design" alt="Responsive Website Design" class="rounded-lg shadow-lg">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3" data-lang-en="Responsive & Professional Websites" data-lang-my="Responsive ဖြစ်ပြီး ကျွမ်းကျင်ပိုင်နိုင်သော ဝဘ်ဆိုဒ်များ">Responsive & Professional Websites</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4" data-lang-en="Your website is the digital face of your brand. We design and develop stunning, fully responsive websites that provide an optimal viewing experience across all devices." data-lang-my="သင်၏ ဝဘ်ဆိုဒ်သည် သင်၏ ကုန်အမှတ်တံဆိပ်၏ ဒစ်ဂျစ်တယ်မျက်နှာစာဖြစ်သည်။ စက်ပစ္စည်းအားလုံးတွင် အကောင်းဆုံးကြည့်ရှုနိုင်သော အတွေ့အကြုံကို ပေးစွမ်းနိုင်သည့် လှပပြီး အပြည့်အဝ တုံ့ပြန်မှုရှိသော ဝဘ်ဆိုဒ်များကို ကျွန်ုပ်တို့ ဒီဇိုင်းဆွဲပြီး ရေးဆွဲပေးပါသည်။">Your website is the digital face...</p>
+                         <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-3" data-lang-en="Benefits You Get" data-lang-my="ရရှိနိုင်မည့် အကျိုးကျေးဇူးများ">Benefits You Get</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Your business is online 24/7." data-lang-my="တစ်နေ့ ၂၄ နာရီ၊ တစ်ပတ် ၇ ရက်လုံး သင်၏လုပ်ငန်း အွန်လိုင်းပေါ်တွင် ရှိနေခြင်း။">Your business is online 24/7.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Showcases business credibility and professionalism." data-lang-my="လုပ်ငန်း၏ ယုံကြည်ကိုးစားနိုင်မှုနှင့် ကျွမ်းကျင်ပိုင်နိုင်မှုကို ပေါ်လွင်စေခြင်း။">Showcases business credibility...</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Reaches a wider market at a lower cost." data-lang-my="ကုန်ကျစရိတ်သက်သာစွာဖြင့် ပိုမိုကျယ်ပြန့်သော ဈေးကွက်သို့ ရောက်ရှိနိုင်ခြင်း။">Reaches a wider market...</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Ability to showcase products and services in detail." data-lang-my="မိမိ၏ ထုတ်ကုန်နှင့် ဝန်ဆောင်မှုများကို အသေးစိတ်ရှင်းလင်းစွာ ပြသနိုင်ခြင်း။">Ability to showcase products...</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2"><img src="https://placehold.co/600x450/C8E6C9/334155?text=SEO+Optimization" alt="SEO Chart" class="rounded-lg shadow-lg"></div>
+                    <div class="md:order-1">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3" data-lang-en="SEO-Ready & Performance-Tuned" data-lang-my="SEO အသင့်နှင့် စွမ်းဆောင်ရည်မြင့်မားခြင်း">SEO-Ready & Performance-Tuned</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4" data-lang-en="A beautiful website is useless if no one can find it. We build our websites on a foundation of strong SEO principles to improve your visibility on search engines." data-lang-my="လှပသော ဝဘ်ဆိုဒ်တစ်ခုကို ရှာမတွေ့နိုင်ပါက အသုံးမဝင်ပါ။ ကျွန်ုပ်တို့သည် ရှာဖွေရေးအင်ဂျင်များတွင် သင်၏မြင်နိုင်စွမ်းကို မြှင့်တင်ရန် ခိုင်မာသော SEO အခြေခံမူများပေါ်တွင် ကျွန်ုပ်တို့၏ ဝဘ်ဆိုဒ်များကို တည်ဆောက်ပါသည်။">A beautiful website is useless...</p>
+                         <a href="#contact" class="inline-block bg-green-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-green-700 transition-all shadow-lg" data-lang-en="Get a Website Quote" data-lang-my="Website အတွက် ဈေးနှုန်းမေးမြန်းရန်">Get a Website Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="service-verification" class="py-20 bg-[#FDFBF8]">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-indigo-800" data-lang-en="Facebook Blue Mark Service" data-lang-my="Facebook Blue Mark ဝန်ဆောင်မှု">Facebook Blue Mark Service</h2>
+                    <p class="text-lg text-gray-600 mt-2" data-lang-en="The Symbol of Authenticity" data-lang-my="စစ်မှန်ခြင်း၏ သင်္ကေတ">The Symbol of Authenticity</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                    <img src="https://placehold.co/600x450/E8EAF6/334155?text=Verified+Profile" alt="Verified Facebook Profile" class="rounded-lg shadow-lg">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3" data-lang-en="Gain Credibility & Trust" data-lang-my="ယုံကြည်စိတ်ချရမှု ရယူပါ">Gain Credibility & Trust</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4" data-lang-en="The Facebook Blue Mark signifies that a page or profile is the authentic presence of the public figure, celebrity, or global brand it represents. Verification builds trust with your audience." data-lang-my="Facebook Blue Mark သည် စာမျက်နှာ သို့မဟုတ် ပရိုဖိုင်တစ်ခုသည် ၎င်းကိုယ်စားပြုသော အများသူငှာ၊ ကျော်ကြားသူ သို့မဟုတ် ကမ္ဘာလုံးဆိုင်ရာ အမှတ်တံဆိပ်၏ စစ်မှန်သောတည်ရှိမှုဖြစ်ကြောင်း ဖော်ပြသည်။ အတည်ပြုခြင်းသည် သင်၏ပရိသတ်နှင့် ယုံကြည်မှုကို တည်ဆောက်ပေးသည်။">The Facebook Blue Mark signifies...</p>
+                         <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-3" data-lang-en="Benefits You Get" data-lang-my="ရရှိနိုင်မည့် အကျိုးကျေးဇူးများ">Benefits You Get</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Shows authenticity and credibility of the account/page." data-lang-my="အကောင့်/Page စစ်မှန်ကြောင်းနှင့် ယုံကြည်စိတ်ချရမှုကို ပြသနိုင်ခြင်း။">Shows authenticity...</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Protects against impersonation accounts/pages." data-lang-my="သင့်နာမည်သုံးပြီး အယောင်ဆောင် Account/Page များရန်မှ ကာကွယ်ပေးခြင်း။">Protects against impersonation...</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Increased visibility and easier reach in Facebook Search." data-lang-my="Facebook Search တွင် ပိုမိုမြင်သာပြီး လူအများထံ ပိုမိုလွယ်ကူစွာ ရောက်ရှိနိုင်ခြင်း။">Increased visibility...</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span data-lang-en="Enhances brand reputation and gains audience trust." data-lang-my="ကုန်အမှတ်တံဆိပ်၏ ဂုဏ်သတင်းကို မြှင့်တင်ပေးပြီး ပရိတ်သတ်၏ ယုံကြည်မှုကို ရရှိစေခြင်း။">Enhances brand reputation...</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2"><img src="https://placehold.co/600x450/C5CAE9/334155?text=Simple+Process" alt="Simple Verification Process" class="rounded-lg shadow-lg"></div>
+                    <div class="md:order-1">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3" data-lang-en="Fast & Reliable Processing" data-lang-my="မြန်ဆန်ပြီး ယုံကြည်စိတ်ချရသော ဆောင်ရွက်မှု">Fast & Reliable Processing</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4" data-lang-en="Navigating Facebook's verification process can be complex. We offer a fast, reliable, and hassle-free service to get your personal profile or business page verified." data-lang-my="Facebook ၏ အတည်ပြုခြင်းလုပ်ငန်းစဉ်သည် ရှုပ်ထွေးနိုင်ပါသည်။ သင်၏ ကိုယ်ပိုင်ပရိုဖိုင် သို့မဟုတ် လုပ်ငန်းစာမျက်နှာကို အတည်ပြုရန် မြန်ဆန်၊ ယုံကြည်စိတ်ချရပြီး အခက်အခဲမရှိသော ဝန်ဆောင်မှုကို ကျွန်ုပ်တို့ ပေးဆောင်ပါသည်။">Navigating Facebook's verification process...</p>
+                         <a href="#contact" class="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-700 transition-all shadow-lg" data-lang-en="Get Verified Now" data-lang-my="ယခု အတည်ပြုရန်">Get Verified Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="updates" class="py-20 bg-blue-50 relative pt-32 pb-20">
+             <div class="section-divider section-divider-top"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path></svg></div>
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-center mb-12">
+                    <div class="text-left">
+                        <h2 class="text-4xl font-bold text-blue-900" data-lang-en="Latest Updates" data-lang-my="နောက်ဆုံးရ သတင်းများ">Latest Updates</h2>
+                        <p class="text-lg text-gray-600 mt-2" data-lang-en="News and announcements from the ZenTho team." data-lang-my="ZenTho အဖွဲ့မှ သတင်းများနှင့် ကြေညာချက်များ။">News and announcements...</p>
+                    </div>
+                    <button id="open-post-modal-button" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-all shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" /></svg>
+                        <span data-lang-en="Create New Post" data-lang-my="ပို့စ်အသစ်တင်ရန်">Create New Post</span>
+                    </button>
+                </div>
+                <div id="posts-container" class="space-y-12"></div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-20 bg-[#FDFBF8]">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-blue-900" data-lang-en="Our Portfolio" data-lang-my="ကျွန်ုပ်တို့၏ လက်ရာများ">Our Portfolio</h2>
+                    <p class="text-lg text-gray-600 mt-2" data-lang-en="A Glimpse of Our Work" data-lang-my="ကျွန်ုပ်တို့၏ လက်ရာများအား ခေတ္တရှုစားခြင်း">A Glimpse of Our Work</p>
+                </div>
+                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg"><img src="https://placehold.co/600x400/80DEEA/FFFFFF?text=Mobile+App" alt="Portfolio: Mobile App" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><p class="text-white text-xl font-bold" data-lang-en="E-Commerce App" data-lang-my="E-Commerce App">E-Commerce App</p></div></div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg"><img src="https://placehold.co/600x400/4DD0E1/FFFFFF?text=Website" alt="Portfolio: Website" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><p class="text-white text-xl font-bold" data-lang-en="Corporate Website" data-lang-my="ကော်ပိုရိတ် ဝဘ်ဆိုဒ်">Corporate Website</p></div></div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg"><img src="https://placehold.co/600x400/26C6DA/FFFFFF?text=Verification" alt="Portfolio: Verification" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><p class="text-white text-xl font-bold" data-lang-en="Verified Client Page" data-lang-my="အတည်ပြုပြီးသော Client Page">Verified Client Page</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-blue-50 relative pt-32">
+              <div class="section-divider section-divider-top"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path></svg></div>
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-blue-900" data-lang-en="Get In Touch" data-lang-my="ဆက်သွယ်ရန်">Get In Touch</h2>
+                    <p class="text-lg text-gray-600 mt-2" data-lang-en="We'd love to hear from you." data-lang-my="သင့်ထံမှ ကြားသိလိုပါသည်။">We'd love to hear from you.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                    <div class="bg-white p-8 rounded-xl card-shadow">
+                        <form>
+                              <div class="mb-4"><label for="name" class="block text-gray-700 font-medium mb-2" data-lang-en="Name" data-lang-my="အမည်">Name</label><input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></div>
+                             <div class="mb-4"><label for="email" class="block text-gray-700 font-medium mb-2" data-lang-en="Email" data-lang-my="အီးမေးလ်">Email</label><input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></div>
+                             <div class="mb-4">
+                                <label for="service" class="block text-gray-700 font-medium mb-2" data-lang-en="Service Type" data-lang-my="ဝန်ဆောင်မှုအမျိုးအစား">Service Type</label>
+                                <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option data-lang-en="App/Game Development" data-lang-my="App/Game ရေးဆွဲခြင်း">App/Game Development</option>
+                                    <option data-lang-en="Website Development" data-lang-my="Website ရေးဆွဲခြင်း">Website Development</option>
+                                    <option data-lang-en="Facebook Profile Verification" data-lang-my="Facebook Profile အတည်ပြုခြင်း">Facebook Profile Verification</option>
+                                    <option data-lang-en="Facebook Page Verification" data-lang-my="Facebook Page အတည်ပြုခြင်း">Facebook Page Verification</option>
+                                    <option data-lang-en="Other" data-lang-my="အခြား">Other</option>
+                                </select>
+                            </div>
+                             <div class="mb-4"><label for="message" class="block text-gray-700 font-medium mb-2" data-lang-en="Message" data-lang-my="စာ">Message</label><textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea></div>
+                             <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-lg" data-lang-en="Send Message" data-lang-my="စာပို့ရန်">Send Message</button>
+                        </form>
+                    </div>
+                     <div class="space-y-6 flex flex-col justify-center">
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-900 mb-2" data-lang-en="Contact Information" data-lang-my="ဆက်သွယ်ရန် အချက်အလက်">Contact Information</h3>
+                            <p class="text-gray-600"><strong>Email:</strong> zentho.official@gmail.com</p>
+                            <p class="text-gray-600"><strong data-lang-en="Phone:" data-lang-my="ဖုန်း:">Phone:</strong> +95 9 123 456 789 (Yangon, Myanmar)</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-900 mb-2" data-lang-en="Follow Us" data-lang-my="ကျွန်ုပ်တို့ကို Follow လုပ်ပါ">Follow Us</h3>
+                            <div class="flex space-x-4"><a href="#" class="text-gray-500 hover:text-blue-700"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-label="Facebook"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path></svg></a><a href="#" class="text-gray-500 hover:text-blue-500"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-label="Telegram"><path d="M21.533 5.469a.82.82 0 0 0-.6-.423L1.933 11.23a.817.817 0 0 0-.002 1.522l4.037 1.262 9.2-5.748-7.363 6.645.003.002.002.002 1.34 4.39a.817.817 0 0 0 1.52.24l2.033-6.242 4.095 1.28a.817.817 0 0 0 1.05-.728l1.493-9.176a.817.817 0 0 0-.27-.69z"></path></svg></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="create-post-modal" class="fixed inset-0 z-[100] items-center justify-center hidden">
+        <div class="modal-overlay fixed inset-0"></div>
+        <div class="bg-white w-full max-w-2xl max-h-[90vh] overflow-y-auto no-scrollbar rounded-xl shadow-2xl p-8 z-10 m-4 relative">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6" data-lang-en="Create a New Update" data-lang-my="Update အသစ်ဖန်တီးပါ">Create a New Update</h2>
+            <form id="create-post-form">
+                <div class="mb-4"><label for="post-title" class="block text-gray-700 font-medium mb-2" data-lang-en="Post Title" data-lang-my="ပို့စ်ခေါင်းစဉ်">Post Title</label><input type="text" id="post-title" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></div>
+                 <div class="mb-4"><label for="post-image-url" class="block text-gray-700 font-medium mb-2" data-lang-en="Image URL" data-lang-my="ပုံ URL">Image URL</label><input type="url" id="post-image-url" placeholder="https://example.com/image.jpg" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></div>
+                <div class="mb-6"><label for="post-text" class="block text-gray-700 font-medium mb-2" data-lang-en="Post Content" data-lang-my="ပို့စ်အကြောင်းအရာ">Post Content</label><textarea id="post-text" rows="6" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea></div>
+                <div class="flex justify-end space-x-4">
+                    <button type="button" id="close-post-modal-button" class="bg-gray-200 text-gray-800 font-semibold px-6 py-2 rounded-lg hover:bg-gray-300 transition-colors" data-lang-en="Cancel" data-lang-my="မလုပ်တော့ပါ">Cancel</button>
+                    <button type="submit" class="bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors shadow" data-lang-en="Publish Post" data-lang-my="ပို့စ်တင်မည်">Publish Post</button>
+                </div>
+            </form>
+             <button id="close-modal-x" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+        </div>
+    </div>
+
+    <footer class="bg-blue-900 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div><h3 class="text-xl font-bold mb-2">ZenTho</h3><p class="text-blue-200" data-lang-en="Innovating Digital Experiences" data-lang-my="ဒစ်ဂျစ်တယ်အတွေ့အကြုံသစ်များကို ဖန်တီးပုံဖော်ခြင်း">Innovating Digital Experiences</p></div>
+                <div><h3 class="text-lg font-semibold mb-2" data-lang-en="Quick Links" data-lang-my="အမြန်လင့်များ">Quick Links</h3><ul class="space-y-1"><li><a href="#about" class="text-blue-200 hover:text-white" data-lang-en="About" data-lang-my="ကျွန်ုပ်တို့အကြောင်း">About</a></li><li><a href="#services" class="text-blue-200 hover:text-white" data-lang-en="Services" data-lang-my="ဝန်ဆောင်မှုများ">Services</a></li><li><a href="#updates" class="text-blue-200 hover:text-white" data-lang-en="Updates" data-lang-my="သတင်းလွှာ">Updates</a></li></ul></div>
+                 <div><h3 class="text-lg font-semibold mb-2" data-lang-en="Contact" data-lang-my="ဆက်သွယ်ရန်">Contact</h3><ul class="space-y-1"><li><a href="mailto:zentho.official@gmail.com" class="text-blue-200 hover:text-white">zentho.official@gmail.com</a></li><li><p class="text-blue-200">+95 9 123 456 789</p></li></ul></div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-6 text-center text-blue-300"><p>&copy; 2025 ZenTho. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
